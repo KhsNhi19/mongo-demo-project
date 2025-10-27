@@ -2,7 +2,7 @@
 
 ## Mô tả ngắn
 
-Dự án này là một ứng dụng web full-stack (Flask + JavaScript) được xây dựng nhằm mục đích khám phá và thể hiện các khả năng nâng cao của MongoDB. Ứng dụng cho phép người dùng tương tác với bộ dữ liệu lớn của Yelp thông qua một giao diện web trực quan, thực hiện các truy vấn phức tạp như tìm kiếm không gian, tìm kiếm toàn văn bản, và phân tích hiệu năng của các mô hình dữ liệu khác nhau. Toàn bộ hệ thống được đóng gói bằng Docker và giám sát bằng Prometheus & Grafana, mô phỏng một quy trình làm việc chuyên nghiệp.
+Dự án này là một ứng dụng web được xây dựng nhằm mục đích khám phá và thể hiện các khả năng nâng cao của MongoDB. Ứng dụng cho phép người dùng tương tác với bộ dữ liệu lớn của Yelp thông qua một giao diện web trực quan, thực hiện các truy vấn phức tạp như tìm kiếm không gian, tìm kiếm toàn văn bản và phân tích hiệu năng của các mô hình dữ liệu khác nhau. Toàn bộ hệ thống được đóng gói bằng Docker và giám sát bằng Prometheus & Grafana.
 
 ## Các tính năng chính
 
@@ -15,7 +15,7 @@ Dự án này là một ứng dụng web full-stack (Flask + JavaScript) đượ
 ## Công nghệ sử dụng
 
 - **Backend:** Python, Flask
-- **Frontend:** HTML, CSS, JavaScript (Vanilla), Leaflet.js (Bản đồ), Chart.js (Biểu đồ)
+- **Frontend:** HTML, CSS, JavaScript, Leaflet.js (Bản đồ)
 - **Database:** MongoDB (với Replica Set)
 - **DevOps:** Docker, Docker Compose
 - **Giám sát & Phân tích Hiệu năng:** Prometheus, Grafana, k6
@@ -52,23 +52,23 @@ mongo_yelp/
 ### 1. Sao chép Kho chứa (Clone)
 
 ```bash
-git clone [https://github.com/KhsNhi19/mongo-demo-project.git](https://github.com/KhsNhi19/mongo-demo-project.git)
+git clone https://github.com/KhsNhi19/mongo-demo-project.git
 cd mongo-demo-project
 ```
 
 ### 2. Chuẩn bị Dữ liệu
 
-> **Lưu ý:** Ứng dụng này yêu cầu một file sao lưu database đã được tiền xử lý (`yelp_db_preprocessed.gz`).
->
-> **Data gốc:** [**Yelp_Dataset**](https://business.yelp.com/data/resources/open-dataset/)
->
-> **Tải về tại:** [**Google Drive Link**](https://drive.google.com/file/d/1sIInaTIC0LpG8ZJQWOtMaxkQe-BKJrjr/view?usp=sharing)
->
-> Sau khi tải về, hãy đặt file `yelp_db_preprocessed.gz` này vào trong thư mục `mongo-demo-project` bạn vừa clone về.
+**Lưu ý:** Ứng dụng này yêu cầu một file sao lưu database đã được tiền xử lý (`yelp_db_preprocessed.gz`).
+
+**Data gốc:** [**Yelp_Dataset**](https://business.yelp.com/data/resources/open-dataset/)
+
+**Tải về tại:** [**Google Drive Link**](https://drive.google.com/file/d/1sIInaTIC0LpG8ZJQWOtMaxkQe-BKJrjr/view?usp=sharing)
+
+Sau khi tải về, hãy đặt file `yelp_db_preprocessed.gz` này vào trong thư mục `mongo-demo-project` bạn vừa clone về.
 
 ### 3. Khởi tạo các file cần thiết
 
-Dự án yêu cầu một file `mongo.key` để bảo mật Replica Set. Hãy chạy lệnh sau trong terminal:
+Dự án yêu cầu một file `mongo.key` để bảo mật Replica Set.
 
 ```bash
 openssl rand -base64 756 > mongo.key
