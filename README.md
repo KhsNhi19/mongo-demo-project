@@ -58,7 +58,7 @@ cd mongo-demo-project
 
 ### 2. Chuẩn bị Dữ liệu
 
-**Lưu ý:** Ứng dụng này yêu cầu một file sao lưu database đã được tiền xử lý (`yelp_db_preprocessed.gz`).
+**Lưu ý:** Cần một file sao lưu database đã được tiền xử lý (`yelp_db_preprocessed.gz`).
 
 **Data gốc:** [**Yelp_Dataset**](https://business.yelp.com/data/resources/open-dataset/)
 
@@ -125,10 +125,6 @@ Khi làm việc nhóm giữa các hệ điều hành khác nhau, có thể xảy
   ```bash
   git config --global core.autocrlf true
   ```
-
-## Giấy phép (License)
-
-Dự án này được cấp phép theo Giấy phép MIT. Xem file `LICENSE` để biết thêm chi tiết.
 
 ## Tác giả & Liên hệ
 
