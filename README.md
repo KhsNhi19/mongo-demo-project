@@ -1,4 +1,4 @@
-# Yelp Data Explorer - Ứng dụng Web Phân tích Dữ liệu
+# Dự án Nghiên cứu MongoDB - Demo web với bộ dữ liệu Yelp
 
 ## Mô tả ngắn
 
@@ -62,7 +62,7 @@ cd mongo-demo-project
 
 **Data gốc:** [**Yelp_Dataset**](https://business.yelp.com/data/resources/open-dataset/)
 
-**Tải về tại:** [**Google Drive Link**](https://drive.google.com/file/d/1sIInaTIC0LpG8ZJQWOtMaxkQe-BKJrjr/view?usp=sharing)
+**Tải về tại:** [**Google Drive Link**](https://drive.google.com/file/d/1OFYlsHNaNpdjd2bQFNvy2fypD5zpWMfU/view?usp=sharing)
 
 Sau khi tải về, hãy đặt file `yelp_db_preprocessed.gz` này vào trong thư mục `mongo-demo-project` bạn vừa clone về.
 
